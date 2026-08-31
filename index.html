@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamento - SHARKFREELAS</title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        shark: {
+                            bg: '#070b14',
+                            card: '#0e1726',
+                            border: 'rgba(0, 240, 255, 0.18)',
+                            accent: '#00f0ff',
+                            hover: '#00b8d4'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #070b14;
+            color: #e2e8f0;
+        }
+
+        .glass-card {
+            background: rgba(14, 23, 38, 0.85);
+            border: 1px solid rgba(0, 240, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(12px);
+        }
+
+        .glass-nav {
+            background: rgba(7, 11, 20, 0.85);
+            border-bottom: 1px solid rgba(0, 240, 255, 0.15);
+            backdrop-filter: blur(16px);
+        }
+
+        .btn-cyan {
+            background: linear-gradient(135deg, #00f0ff 0%, #0088ff 100%);
+            color: #050b14;
+            transition: all 0.2s ease-in-out;
+        }
+        .btn-cyan:hover {
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.45);
+            transform: translateY(-1px);
+        }
+
+        .progress-glow {
+            box-shadow: 0 0 25px rgba(0, 240, 255, 0.6);
+            animation: pulse-glow 2s infinite;
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 15px rgba(0, 240, 255, 0.4); }
+            50% { box-shadow: 0 0 35px rgba(0, 240, 255, 0.8); }
+            100% { box-shadow: 0 0 15px rgba(0, 240, 255, 0.4); }
+        }
+
+
+        .stripes {
+            background-image: linear-gradient(
+                45deg,
+                rgba(255, 255, 255, 0.15) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, 0.15) 50%,
+                rgba(255, 255, 255, 0.15) 75%,
+                transparent 75%,
+                transparent
+            );
+            background-size: 1rem 1rem;
+            animation: move-stripes 1s linear infinite;
+        }
+
+        @keyframes move-stripes {
+            0% { background-position: 1rem 0; }
+            100% { background-position: 0 0; }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: rgba(14, 23, 38, 0.5); }
+        ::-webkit-scrollbar-thumb { background: rgba(0, 240, 255, 0.2); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(0, 240, 255, 0.5); }
+    </style>
+</head>
+<body class="min-h-screen font-sans antialiased flex flex-col bg-[#070b14] selection:bg-cyan-400 selection:text-slate-900 relative overflow-x-hidden">
+
+
+    <div class="fixed top-0 left-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[150px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-0 right-1/4 w-[600px] h-[400px] bg-cyan-500/10 rounded-full blur-[150px] pointer-events-none z-0"></div>
+
+
+    <nav class="glass-nav sticky top-0 z-40 px-4 sm:px-8 py-3">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+                <a href="#" class="flex items-center gap-3">
+                    
+                    <span class="text-lg font-black tracking-wider text-white font-mono inline-block">
+                        SHARK<span class="text-cyan-400">FREELAS</span>
+                    </span>
+                </a>
+            </div>
+
+   
+            <div class="flex items-center">
+                <a href="#sessao-waitlist" class="text-xs font-semibold text-cyan-400 hover:text-white px-4 py-2 rounded-xl border border-cyan-500/30 hover:bg-cyan-500/10 transition-colors inline-block text-center cursor-pointer">
+                    Entrar na Waitlist
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="flex-1 max-w-4xl w-full mx-auto p-4 sm:p-8 space-y-12 z-10 relative flex flex-col justify-center py-12">
+
+
+        <div class="text-center space-y-4">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 uppercase tracking-widest font-mono inline-block mb-2">
+                Status do Sistema
+            </span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white font-mono tracking-tighter">
+                Estamos Quase <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Prontos.</span>
+            </h1>
+            <p class="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto">
+                A revolução do mercado freelancer está sendo compilada. Acompanhe em tempo real o que estamos construindo nos bastidores antes do lançamento oficial.
+            </p>
+        </div>
+
+
+        <div class="glass-card p-6 sm:p-8 rounded-3xl space-y-6 relative overflow-hidden">
+
+            <div class="absolute inset-0 bg-gradient-to-b from-cyan-900/20 to-transparent pointer-events-none"></div>
+
+            <div class="flex items-end justify-between relative z-10">
+                <div class="space-y-1">
+                    <h2 class="text-lg font-bold text-white font-mono">Progresso do Lançamento</h2>
+                    <p class="text-xs text-slate-400">Fase atual: Integração de Pagamentos</p>
+                </div>
+                <div class="text-5xl sm:text-6xl font-black text-cyan-400 font-mono tracking-tighter drop-shadow-[0_0_15px_rgba(0,240,255,0.5)]">
+                    70<span class="text-2xl text-cyan-500">%</span>
+                </div>
+            </div>
+
+
+            <div class="w-full bg-slate-900/80 rounded-full h-8 sm:h-10 p-1 border border-slate-700/50 shadow-inner relative z-10">
+                <div class="bg-gradient-to-r from-blue-600 via-cyan-500 to-cyan-300 h-full rounded-full w-[70%] relative overflow-hidden progress-glow transition-all duration-1000">
+                    <!-- Listras animadas -->
+                    <div class="absolute inset-0 stripes opacity-30"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="space-y-6">
+            <h3 class="text-xl font-bold text-white font-mono border-b border-slate-800 pb-3">Log de Desenvolvimento</h3>
+
+            <div class="relative border-l-2 border-slate-800/80 ml-3 sm:ml-4 space-y-8 pb-4">
+                
+                <!-- Etapa Concluída 1 -->
+                <div class="relative pl-6 sm:pl-8">
+                    <!-- Bolinha de Status -->
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.6)] border-2 border-[#070b14]"></div>
+                    <div class="glass-card p-4 sm:p-5 rounded-2xl hover:border-emerald-500/30 transition-colors">
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="text-sm sm:text-base font-bold text-white">Arquitetura & Design UI/UX</h4>
+                            <span class="text-[10px] font-mono text-emerald-400 bg-emerald-950/50 px-2 py-0.5 rounded border border-emerald-900">CONCLUÍDO</span>
+                        </div>
+                        <p class="text-xs text-slate-400">Estruturação de banco de dados, definição do design system cyberpunk/glassmorphism e prototipação das telas.</p>
+                    </div>
+                </div>
+
+                <!-- Etapa Concluída 2 -->
+                <div class="relative pl-6 sm:pl-8">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.6)] border-2 border-[#070b14]"></div>
+                    <div class="glass-card p-4 sm:p-5 rounded-2xl hover:border-emerald-500/30 transition-colors">
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="text-sm sm:text-base font-bold text-white">Dashboards Principais</h4>
+                            <span class="text-[10px] font-mono text-emerald-400 bg-emerald-950/50 px-2 py-0.5 rounded border border-emerald-900">CONCLUÍDO</span>
+                        </div>
+                        <p class="text-xs text-slate-400">Desenvolvimento da visão do Prestador (Feed de Oportunidades) e da visão do Contratante (Busca de Talentos).</p>
+                    </div>
+                </div>
+
+                <!-- Etapa Atual (Em Andamento) -->
+                <div class="relative pl-6 sm:pl-8">
+                    <!-- Bolinha Pulsante (Cyan) -->
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-cyan-400 shadow-[0_0_15px_rgba(0,240,255,0.8)] border-2 border-[#070b14] animate-pulse"></div>
+                    <div class="glass-card p-4 sm:p-5 rounded-2xl border-cyan-500/40 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                        <div class="flex items-center justify-between mb-2 relative z-10">
+                            <h4 class="text-sm sm:text-base font-bold text-white">Integração Escrow & Chat</h4>
+                            <span class="text-[10px] font-mono text-cyan-400 bg-cyan-950/50 px-2 py-0.5 rounded border border-cyan-800 flex items-center gap-1">
+                                <svg class="w-3 h-3 animate-spin" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                                EM ANDAMENTO
+                            </span>
+                        </div>
+                        <p class="text-xs text-slate-300 relative z-10">Melhorias na Dashboard do contratante e freelancers</p>
+                    </div>
+                </div>
+
+                <!-- Etapa Pendente -->
+                <div class="relative pl-6 sm:pl-8 opacity-60">
+                    <!-- Bolinha Cinza (Pendente) -->
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-slate-700 border-2 border-[#070b14]"></div>
+                    <div class="glass-card p-4 sm:p-5 rounded-2xl border-dashed border-slate-700/50 hover:border-slate-600 transition-colors">
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="text-sm sm:text-base font-bold text-slate-300">Desafio Técnico & Gamificação</h4>
+                            <span class="text-[10px] font-mono text-slate-400 bg-slate-800/50 px-2 py-0.5 rounded border border-slate-700 flex items-center gap-1">
+                                🔒 PENDENTE
+                            </span>
+                        </div>
+                        <p class="text-xs text-slate-400">Planejamento e implementação de sistema de pagamentos </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+       <!-- CALL TO ACTION FINAL: WAITLIST EM DESTAQUE -->
+        <div id="sessao-waitlist" class="glass-card p-8 sm:p-12 rounded-3xl border border-cyan-500/40 relative overflow-hidden text-center mt-12 shadow-[0_0_40px_rgba(0,240,255,0.15)]">
+            
+            <!-- Efeitos de Luz de Fundo no Card -->
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-900/30 to-transparent pointer-events-none"></div>
+            <div class="absolute -bottom-24 left-1/2 transform -translate-x-1/2 w-64 h-64 bg-cyan-500/20 rounded-full blur-[80px] pointer-events-none"></div>
+
+            <div class="relative z-10 space-y-6 max-w-2xl mx-auto">
+                <!-- Badge -->
+                <span class="px-3 py-1.5 rounded-full text-[10px] sm:text-xs font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 uppercase tracking-widest font-mono inline-block">
+                    Acesso Antecipado Exclusivo
+                </span>
+
+                <!-- Textos Chamativos -->
+                <div class="space-y-3">
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white font-mono tracking-tight">
+                        Garanta seu lugar na <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Waitlist</span>
+                    </h3>
+                    <p class="text-sm text-slate-300">
+                        Os primeiros usuários a entrarem na plataforma receberão a tag de <strong>Fundador</strong> e benefícios exclusivos nas taxas durante o primeiro mês.
+                    </p>
+                </div>
+
+                <!-- Formulário Aprimorado -->
+                <form id="waitlist-form" action="https://formspree.io/f/xjyvykwa" method="POST" class="flex flex-col sm:flex-row max-w-lg mx-auto relative group gap-3 sm:gap-0 mt-8">
+                    <input
+                        name="email" 
+                        type="email" 
+                        required 
+                        placeholder="Digite seu melhor e-mail..." 
+                        class="w-full bg-slate-900/90 border border-slate-600 sm:border-r-0 rounded-xl sm:rounded-r-none sm:rounded-l-xl pl-5 pr-4 py-4 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-cyan-400 focus:bg-slate-900 transition-all shadow-inner"
+                    >
+                    <button
+                        id="waitlist-button" 
+                        type="submit" 
+                        class="btn-cyan font-bold text-sm px-8 py-4 rounded-xl sm:rounded-l-none sm:rounded-r-xl shadow-[0_0_20px_rgba(0,240,255,0.3)] shrink-0 border border-transparent hover:shadow-[0_0_30px_rgba(0,240,255,0.6)] transition-all uppercase tracking-wider"
+                    >
+                        Entrar na Lista
+                    </button>
+                </form>
+                <div 
+                    id="waitlist-success"
+                    class="hidden mt-4 p-4 rounded-xl border border-green-500/40 bg-green-500/10 text-green-300 text-sm font-medium"
+                >
+                     E-mail enviado com sucesso! Você entrou na nossa waitlist.
+                </div>
+
+                <!-- Mensagem de erro -->
+                <div 
+                    id="waitlist-error"
+                    class="hidden mt-4 p-4 rounded-xl border border-red-500/40 bg-red-500/10 text-red-300 text-sm font-medium"
+                >
+                     Ops! Não foi possível enviar. Tente novamente.
+                </div>
+                <p class="text-[10px] text-slate-500 font-mono mt-3">Prometemos não enviar spam. Cancele quando quiser.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+    const form = document.getElementById("waitlist-form");
+    const button = document.getElementById("waitlist-button");
+    const successMessage = document.getElementById("waitlist-success");
+    const errorMessage = document.getElementById("waitlist-error");
+
+    form.addEventListener("submit", async function(event) {
+        event.preventDefault();
+
+        // Esconde mensagens anteriores
+        successMessage.classList.add("hidden");
+        errorMessage.classList.add("hidden");
+
+        // Estado do botão
+        const originalText = button.innerHTML;
+        button.innerHTML = "Enviando...";
+        button.disabled = true;
+
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (response.ok) {
+                // Sucesso
+                form.reset();
+                successMessage.classList.remove("hidden");
+
+            } else {
+                // Erro retornado pelo Formspree
+                errorMessage.classList.remove("hidden");
+            }
+
+        } catch (error) {
+            // Erro de conexão
+            errorMessage.classList.remove("hidden");
+        }
+
+        // Restaura o botão
+        button.innerHTML = originalText;
+        button.disabled = false;
+    });
+</script>
+
+</body>
+</html>
